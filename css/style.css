@@ -17,13 +17,12 @@ html {
 
 body {
     background-color: var(--bg-color);
-    width: 100vw;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     overflow: hidden;
+    min-height: 100vh;
 }
 
 .noise::before {
@@ -43,9 +42,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1700px;
+    width: min(100% - 30px, 1500px);
+    margin-inline: auto;
     z-index: 10;
-    
 }
 
 .text {
@@ -54,7 +53,7 @@ body {
     background: url(../img/bg-video2.gif);
     background-repeat: repeat;
     background-position: center;
-    background-size: 1800px;
+    background-size: cover;
     background-clip: border-box;
     font-size: 212px;
     font-weight: 700;
@@ -62,7 +61,7 @@ body {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     z-index: 10;
-    letter-spacing: 10;  
+    letter-spacing: 10;    
 }
 
 
@@ -73,7 +72,7 @@ body {
 }
 
 .icons-collection {
-    /* border: 1px solid yellow; */
+/*     border: 1px solid yellow; */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -84,8 +83,10 @@ body {
 .icons {
     align-items: center;
     justify-content: center;
-    width: 50px;
+    width: 17%;
+    height: 100%;
     filter: grayscale();
+/*     border: 1px solid yellow; */
 }
 
 
@@ -94,13 +95,13 @@ body {
 }
 
 
-@media (min-width: 320px) and (max-width: 425px) {
-    body {
+@media (min-width: 320px) and (max-width: 599px) {
+    /* body {
         overflow: clip;
-    }
+    } */
     
     .text-container {
-        width: 420px;
+        width: 100%;
     }
 
     .text {
@@ -112,14 +113,13 @@ body {
     }
 
     .icons {
-        width: 10%;
-        height: 10%;
+        width: 20%;
+        height: 100%;
         filter: none;
     }
 
-    .icons:nth-child(3) {
-        width: 10%;
-        height: 10%;
+    .icons:nth-child(4) img {
+        width: 100%;
     }
 
 }
@@ -143,9 +143,8 @@ body {
         filter: grayscale();
     }
 
-    .icons:nth-child(3) {
-        width: 20%;
-        height: 20%;
+    .icons:nth-child(4) img {
+        width: 100%;
     }
 
 }
