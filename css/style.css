@@ -3,10 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Anton', sans-serif;
-font-family: 'Changa One', cursive;
-font-family: 'Rubik Mono One', sans-serif;
-font-family: 'Staatliches', cursive;
+    font-family: 'Mohave', sans-serif;
 }
 
 html {
@@ -48,6 +45,7 @@ body {
     align-items: center;
     width: 1700px;
     z-index: 10;
+    
 }
 
 .text {
@@ -58,13 +56,15 @@ body {
     background-position: center;
     background-size: 1800px;
     background-clip: border-box;
-    font-size: 150px;
-    font-weight: 900;
-    font-family: 'Exo', sans-serif;
+    font-size: 212px;
+    font-weight: 700;
+    font-family: 'Mohave', sans-serif;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     z-index: 10;
+    letter-spacing: 10;  
 }
+
 
 .iso img {
     width: 60px;
