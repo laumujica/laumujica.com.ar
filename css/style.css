@@ -1,0 +1,154 @@
+/* Variables */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    --bg-color: #242038d7;
+    --primary-color: #47126b;
+    --secondary-color: #6d23b6;
+    --hover-color: #ac46a1;
+    --light-color: #ea698b;
+    --white-color: #ffffff; 
+}
+
+body {
+    background-color: var(--bg-color);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.noise::before {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    content: "";
+    opacity: 0.05;
+    z-index: -1;
+    pointer-events: none;
+    background: url(./img/noise2.gif);
+    overflow: hidden;
+}
+
+.text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1700px;
+}
+
+.text {
+    overflow: hidden;
+    order: 0;
+    background: url(../img/bg-video.gif);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 1800px;
+    background-clip: border-box;
+    font-size: 130px;
+    font-weight: 900;
+    font-family: 'Exo', sans-serif;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+
+.icons-collection {
+/*     border: 1px solid yellow; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 300px;
+}
+
+.icons {
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    filter: grayscale();
+}
+
+.icons:nth-child(3) {
+    width: 45px;
+}
+
+.icons:hover {
+    filter: none;
+}
+
+.pending {
+    padding: 50px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    color: var(--white-color);
+    width: 600px;
+}
+
+span {
+    color: #bfd732;
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+    body {
+        overflow: clip;
+    }
+    
+    .text-container {
+        width: 420px;
+    }
+
+    .text {
+        font-size: 50px;
+    }
+
+    .icons-collection {
+        width: 200px;
+    }
+
+    .icons {
+        width: 10%;
+        height: 10%;
+        filter: none;
+    }
+
+    .icons:nth-child(3) {
+        width: 10%;
+        height: 10%;
+    }
+
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .text-container {
+        width: 520px;
+    }
+
+    .text {
+        font-size: 80px;
+    }
+
+    .icons-collection {
+        width: 200px;
+    }
+
+    .icons {
+        width: 20%;
+        height: 20%;
+        filter: grayscale();
+    }
+
+    .icons:nth-child(3) {
+        width: 20%;
+        height: 20%;
+    }
+
+}
