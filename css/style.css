@@ -3,6 +3,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Anton', sans-serif;
+font-family: 'Changa One', cursive;
+font-family: 'Rubik Mono One', sans-serif;
+font-family: 'Staatliches', cursive;
 }
 
 html {
@@ -54,7 +58,7 @@ body {
     background-position: center;
     background-size: 1800px;
     background-clip: border-box;
-    font-size: 100px;
+    font-size: 150px;
     font-weight: 900;
     font-family: 'Exo', sans-serif;
     -webkit-text-fill-color: transparent;
