@@ -72,13 +72,13 @@ body {
     text-transform: uppercase;
 }
 
-
 .iso img {
-    width: 60px;
-    padding-bottom: 60px;
-    z-index: 10;
+  width: 3.5rem;
+  padding-bottom: 60px;
+  z-index: 10;
 }
 
+/* Icons Section */
 .icons-collection {
 /*     border: 1px solid yellow; */
     display: flex;
@@ -97,11 +97,11 @@ body {
 /*     border: 1px solid yellow; */
 }
 
-
 .icons:hover {
     filter: none;
 }
 
+/* Button Contact Me */
 .button-container {
     display: flex;
     margin: 0 auto;
@@ -140,7 +140,7 @@ body {
     cubic-bezier(0, 0, 0.5, 2),
       width 0.25s 
       cubic-bezier(0, 0, 0.5, 2);
-  }
+  }  
   .button:hover::before {
     width: 100%;
     translate: -18px -50%;
@@ -155,9 +155,42 @@ body {
     translate: 3px 0;
   }
 
-
-
-
+/* MODAL */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+/** MEDIA QUERYS **/
 @media (min-width: 320px) and (max-width: 599px) {
     /* body {
         overflow: clip;
@@ -238,5 +271,45 @@ body {
         align-items: center;
         padding: 3rem 0;
     }
+
+}
+
+@media (min-width: 1025px) and (max-width: 1366px) {
+  .name {
+      font-size: 3rem;
+  }
+  
+  .text {
+      font-size: 5rem;
+  }
+  
+  .iso img {
+    width: 2.5rem;
+    margin: 0 2rem;
+    padding-bottom: 2rem;
+    z-index: 10;
+  }
+
+  .icons-collection {
+      width: 15rem;
+  }
+
+  .icons {
+      width: 20%;
+      height: 20%;
+      filter: grayscale();
+  }
+
+  .icons:nth-child(4) img {
+      width: 100%;
+  }
+
+  .button-container {
+      width: 100%;
+  /*     border: 1px solid red; */
+      justify-content: center;
+      align-items: center;
+      padding: 2rem 0;
+  }
 
 }
