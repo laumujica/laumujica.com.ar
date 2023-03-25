@@ -292,19 +292,39 @@
     <div id="myModal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
-        <form>
+        <!-- Form -->
+        <form
+          action="https://formsubmit.co/hola@laumujica.com.ar"
+          method="POST"
+        >
+          <!-- Honeypot -->
+          <input type="text" name="_honey" style="display: none" />
+
+          <!-- Disable Captcha -->
+          <input type="hidden" name="_captcha" value="false" />
+
+          <!-- Next -->
+          <input
+            type="hidden"
+            name="_next"
+            value="https://laumujica.com.ar/msg_success.html"
+          />
+
+          <!-- Template -->
+          <input type="hidden" name="_template" value="table" />
+
+          <!-- Form -->
           <label for="name">Name</label>
-          <input type="text" id="name" name="name" required>
-        
+          <input type="text" id="name" name="Name" required />
+
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-        
+          <input type="email" id="email" name="Email" required />
+
           <label for="message">Message</label>
-          <textarea id="message" name="message" required></textarea>
-        
+          <textarea id="message" name="Message" required></textarea>
+
           <button type="submit">Send Message</button>
         </form>
-        
       </div>
     </div>
 
