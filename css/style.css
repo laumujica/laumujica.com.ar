@@ -91,32 +91,32 @@ body {
 
 a {
   text-decoration: none;
-  color: var(--white-color)
+  color: var(--white-color);
 }
 
 .link-backHome {
-	position: relative;
-	display: inline-block;
+  position: relative;
+  display: inline-block;
   margin: 2rem 0;
 }
 
 .link-backHome::before {
-	content: "";
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	height: 2px;
-	background-color: #fff;
-	border-radius: 4px;
-	scale: 0 1;
-	transform-origin: right;
-	transition: scale 0.25s;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 4px;
+  scale: 0 1;
+  transform-origin: right;
+  transition: scale 0.25s;
 }
 
 .link-backHome:hover::before {
-	scale: 1;
-	transform-origin: left;
+  scale: 1;
+  transform-origin: left;
 }
 /* Icons Section */
 .icons-collection {
@@ -202,7 +202,7 @@ a {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
 }
 
 .modal-content {
@@ -344,7 +344,7 @@ button[type="submit"]:hover {
   .text-container {
     max-width: 30rem;
   }
-  
+
   .text {
     font-size: 5rem;
   }
@@ -371,11 +371,11 @@ button[type="submit"]:hover {
   }
 }
 
-@media (min-width: 1025px) and (max-width: 1366px) { 
+@media (min-width: 1025px) and (max-width: 1366px) {
   .name {
     font-size: 3rem;
   }
-  
+
   .name-msg {
     font-size: 3.5rem;
     color: var(--white-color);
@@ -431,6 +431,17 @@ button[type="submit"]:hover {
   .modal-content {
     background-color: #fefefe;
     margin: 5% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+  }
+}
+
+@media only screen and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+  /* Modal form */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 35% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
     width: 40%; /* Could be more or less, depending on screen size */
