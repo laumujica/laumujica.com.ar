@@ -33,6 +33,26 @@
   <body>
     <div class="noise"></div>
 
+    <!-- ? Hamburguer menu -->
+    <div id="menu">
+      <div id="menu-bar" onclick="menuOnClick()">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
+      </div>
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="#" class="link-menu">Home</a></li>
+          <li><a href="#" class="link-menu">About me</a></li>
+          <li><a href="#" class="link-menu">Projects</a></li>
+          <li><a href="#" class="link-menu">Blog</a></li>
+        </ul>
+      </nav> 
+    </div>
+    
+    <div class="menu-bg" id="menu-bg"></div>
+
+
     <div class="iso-container">
       <h1 class="iso"><img src="./img/iso.png" alt="" /></h1>
     </div>
@@ -323,7 +343,7 @@
           <label for="message">Message</label>
           <textarea id="message" name="Message" required></textarea>
 
-          <button type="submit">Send Message</button>
+          <button type="submit" class="send-button">Send Message</button>
         </form>
       </div>
     </div>
