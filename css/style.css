@@ -170,10 +170,10 @@ body {
   
   .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 10% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 60%; /* Could be more or less, depending on screen size */
   }
   
   .close {
@@ -189,6 +189,50 @@ body {
     text-decoration: none;
     cursor: pointer;
   }
+
+  /* Form */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    border-radius: 10px; /* Rounded borders */
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    height: 10rem;
+  }
+  
+  button[type="submit"] {
+    margin-top: 1rem;
+    padding: 0.5rem 1.5rem;
+    background-color: #47126b;
+    color: #fff;
+    border: none;
+    border-radius: 10px; /* Rounded borders */
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #6d23b6;
+  }
+  
   
 /** MEDIA QUERYS **/
 @media (min-width: 320px) and (max-width: 599px) {
@@ -310,6 +354,15 @@ body {
       justify-content: center;
       align-items: center;
       padding: 2rem 0;
+  }
+
+  /* Modal form */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
   }
 
 }
