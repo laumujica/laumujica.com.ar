@@ -137,8 +137,26 @@ body {
   transform: translate(-60%,-30%);
 }
 
-.link-menu:hover {
-  color: var(--high-color);
+.link {
+	position: relative;
+	display: inline-block;
+}
+.link::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	background-color: var(--high-color);
+	border-radius: 4px;
+	scale: 0 1;
+	transform-origin: right;
+	transition: scale 0.25s;
+}
+.link:hover::before {
+	scale: 1;
+	transform-origin: left;
 }
 /* ! End hamburguer */
 
