@@ -34,7 +34,7 @@
     <div class="noise"></div>
 
     <!-- ? Hamburguer menu -->
-    <div id="menu">
+   <!--  <div id="menu">
       <div id="menu-bar" onclick="menuOnClick()">
         <div id="bar1" class="bar"></div>
         <div id="bar2" class="bar"></div>
@@ -50,7 +50,7 @@
       </nav> 
     </div>
     
-    <div class="menu-bg" id="menu-bg"></div>
+    <div class="menu-bg" id="menu-bg"></div> -->
 
 
     <div class="iso-container">
@@ -334,13 +334,13 @@
           <input type="hidden" name="_template" value="table" />
 
           <!-- Form -->
-          <label for="name">Name</label>
+          <label for="name">Name <span class="asterisk">*</span></label>
           <input type="text" id="name" name="Name" required />
 
-          <label for="email">Email</label>
+          <label for="email">Email <span class="asterisk">*</span></label>
           <input type="email" id="email" name="Email" required />
 
-          <label for="message">Message</label>
+          <label for="message">Message <span class="asterisk">*</span></label>
           <textarea id="message" name="Message" required></textarea>
 
           <button type="submit" class="button-send">Send Message</button>
