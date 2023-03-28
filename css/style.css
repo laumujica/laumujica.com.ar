@@ -34,7 +34,6 @@ body {
 /** Circle test */
 #cursor-wrapper {
   position: relative;
-  /*   border: 1px solid yellow; */
 }
 
 #circle {
@@ -63,25 +62,38 @@ body {
   width: 50px;
   height: 50px;
   border: 0.5rem solid;
-  /*   border-radius: 0; */
-/*   border-image: linear-gradient(to bottom, var(--high-color), var(--light-color)) 1; */
   border-image-slice: 1;
   animation: animate-border 3s linear infinite;
 }
 
 @keyframes animate-border {
   0% {
-    border-image: linear-gradient(to bottom, var(--high-color), var(--light-color)) 1;
+    border-image: linear-gradient(
+        to bottom,
+        var(--high-color),
+        var(--light-color)
+      )
+      1;
     transform: rotate(0deg);
     scale: 1;
   }
   50% {
-    border-image: linear-gradient(to bottom,var(--light-color), var(--secondary-color)) 1;
+    border-image: linear-gradient(
+        to bottom,
+        var(--light-color),
+        var(--secondary-color)
+      )
+      1;
     transform: rotate(180deg);
     scale: 1.3;
   }
   100% {
-    border-image: linear-gradient(to bottom, var(--secondary-color), var(--high-color)) 1;
+    border-image: linear-gradient(
+        to bottom,
+        var(--secondary-color),
+        var(--high-color)
+      )
+      1;
     transform: rotate(360deg);
     scale: 1;
   }
@@ -178,7 +190,7 @@ body {
 }
 
 .change .bar {
-  background-color: white;
+  background-color: var(--white-color);
 }
 
 .change #bar1 {
@@ -347,7 +359,9 @@ a {
   justify-content: end;
   padding: 1rem 5% 1rem 0;
   width: 100%;
+  /*   border: 1px solid yellow; */
 }
+
 .button {
   position: relative;
   display: flex;
@@ -360,12 +374,13 @@ a {
   cursor: pointer;
   letter-spacing: 0.1rem;
 }
+
 .button::before {
   content: "";
   position: absolute;
   top: 50%;
   z-index: -1;
-  transform: translateX(calc(100% + 1.7rem)) translateY(-50%);
+  transform: translateX(calc(100% + 3.2rem)) translateY(-50%);
   width: 45px;
   height: 45px;
   background: var(--hover-color);
@@ -373,16 +388,19 @@ a {
   transition: transform 0.25s 0.25s cubic-bezier(0, 0, 0.5, 2),
     width 0.25s cubic-bezier(0, 0, 0.5, 2);
 }
+
 .button:hover::before {
   width: 100%;
   transform: translateX(-18px) translateY(-50%);
   transition: transform 0.25s cubic-bezier(0, 0, 0.5, 2),
     width 0.25s 0.25s cubic-bezier(0, 0, 0.5, 2);
 }
+
 .button i {
   margin-left: 5px;
   transition: transform 0.25s 0.4s cubic-bezier(0, 0, 0.5, 2);
 }
+
 .button:hover i {
   transform: translateX(3px);
 }
@@ -392,22 +410,21 @@ a {
 }
 
 /* Modal */
-#name, 
-#email, 
+#name,
+#email,
 #message {
   cursor: text;
 }
 
 .modal {
-  display: none; 
-  position: fixed; 
-  z-index: 888; 
+  display: none;
+  position: fixed;
+  z-index: 888;
   left: 0;
   top: 0;
-  margin: 0 auto;
   width: 100%;
   height: 100%;
-  overflow: auto; 
+  overflow: auto;
   background-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -416,7 +433,7 @@ a {
   margin: 10% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 50%;
+  width: 40%;
 }
 
 .close {
@@ -458,7 +475,7 @@ textarea {
   width: 100%;
   padding: 1rem;
   margin-top: 0.5rem;
-  border-radius: 10px; 
+  border-radius: 10px;
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
@@ -547,6 +564,8 @@ button[type="submit"]:hover {
   }
 
   .modal-content {
+    top: 50%;
+    left: 50%;
     width: 15rem;
     padding: 0.7rem;
   }
@@ -566,16 +585,27 @@ button[type="submit"]:hover {
     letter-spacing: 0.1rem;
   }
 
+  .button::before {
+    width: 30px;
+    height: 30px;
+    transform: translateX(calc(100% + 3rem)) translateY(-50%);
+  }
+
   .link-backHome {
     margin: 1rem 0;
     font-size: 1rem;
+  }
+
+  #circle {
+    cursor: default;
+    display: none;
   }
 }
 
 /** 2- 600**/
 @media (min-width: 600px) and (max-width: 1024px) {
   .name {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .name-msg {
@@ -623,16 +653,22 @@ button[type="submit"]:hover {
     width: 100%;
   }
 
+  
   .button-container {
     width: 100%;
     justify-content: center;
     align-items: center;
-    padding: 3rem 0;
+    margin: 3rem 0;
   }
 
   .link-backHome {
     margin: 2rem 0;
     font-size: 1rem;
+  }
+
+  #circle {
+    cursor: default;
+    display: none;
   }
 }
 
@@ -690,7 +726,7 @@ button[type="submit"]:hover {
   }
 
   .button-container {
-    width: 100%;
+    width: auto;
     /*     border: 1px solid red; */
     justify-content: center;
     align-items: center;
@@ -703,7 +739,6 @@ button[type="submit"]:hover {
 
   /* Modal form */
   .modal-content {
-    margin: 5% auto;
     width: 40%;
   }
 
