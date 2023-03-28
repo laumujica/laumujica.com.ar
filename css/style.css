@@ -220,7 +220,7 @@ body {
   scale: 1;
   transform-origin: left;
 }
-/* ! End hamburguer */
+/* ? End hamburguer */
 
 /* Main content */
 .text-container {
@@ -336,6 +336,10 @@ a {
   filter: none;
 }
 
+.icons:active {
+  scale: 1.1;
+}
+
 /* Button Contact Me */
 .button-container {
   display: flex;
@@ -383,11 +387,11 @@ a {
   transform: translateX(3px);
 }
 
-.button-send {
-  background-color: var(--hover-color);
+.button:active {
+  scale: 1.1;
 }
 
-/* MODAL */
+/* Modal */
 #name, 
 #email, 
 #message {
@@ -412,12 +416,14 @@ a {
   padding: 20px;
   border: 1px solid #888;
   width: 50%;
+  border: 1px solid yellow;
 }
 
 .close {
   color: #aaa;
+  margin-top: -1rem;
   float: right;
-  font-size: 28px;
+  font-size: 35px;
   font-weight: bold;
 }
 
@@ -426,6 +432,11 @@ a {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+.close:active {
+  scale: 1.2;
+  rotate: 15deg;
 }
 
 /* Form */
@@ -447,7 +458,7 @@ textarea {
   width: 100%;
   padding: 1rem;
   margin-top: 0.5rem;
-  border-radius: 10px; /* Rounded borders */
+  border-radius: 10px; 
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
@@ -462,7 +473,7 @@ button[type="submit"] {
   background-color: var(--hover-color);
   color: #fff;
   border: none;
-  border-radius: 10px; /* Rounded borders */
+  border-radius: 10px;
   cursor: pointer;
   font-size: 1.2rem;
   transition: background-color 0.3s ease;
@@ -470,6 +481,14 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: var(--primary-color);
+}
+
+.button-send {
+  background-color: var(--hover-color);
+}
+
+.button-send:active {
+  scale: 1.1;
 }
 
 .asterisk {
