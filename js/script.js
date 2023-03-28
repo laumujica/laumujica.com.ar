@@ -30,3 +30,14 @@ function menuOnClick() {
   document.getElementById("nav").classList.toggle("change");
   document.getElementById("menu-bg").classList.toggle("change-bg");
 }
+
+/* Circle cursor */
+const circle = document.getElementById('circle');
+const circleStyle = circle.style;
+
+document.addEventListener('mousemove', e => {
+  window.requestAnimationFrame(() => {
+    circleStyle.top = `${ e.clientY - circle.offsetHeight/2 }px`;
+    circleStyle.left = `${ e.clientX - circle.offsetWidth/2 }px`;
+  });
+});
