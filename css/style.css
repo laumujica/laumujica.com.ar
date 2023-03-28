@@ -514,6 +514,10 @@ button[type="submit"]:hover {
     text-align: center;
   }
 
+  textarea {
+    height: 5rem;
+  }
+
   .text-container {
     max-width: 18rem;
   }
@@ -541,9 +545,13 @@ button[type="submit"]:hover {
     width: 100%;
   }
 
+  .modal-content {
+    width: 15rem;
+    padding: 0.7rem;
+  }
+
   .button-container {
     width: 100%;
-    /*     border: 1px solid red; */
     justify-content: center;
     align-items: center;
     padding: 0;
@@ -555,7 +563,6 @@ button[type="submit"]:hover {
     align-items: center;
     font-size: 1rem;
     letter-spacing: 0.1rem;
-    /* border: 1px solid yellow; */
   }
 
   .link-backHome {
