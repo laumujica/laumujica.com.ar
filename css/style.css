@@ -16,7 +16,7 @@ html {
   --high-color: #ffed6c;
 }
 
-body {
+main {
   background-color: var(--bg-color);
   display: flex;
   justify-content: center;
@@ -359,6 +359,7 @@ a {
   justify-content: end;
   padding: 1rem 5% 1rem 0;
   width: 100%;
+  z-index: 20;
   /*   border: 1px solid yellow; */
 }
 
