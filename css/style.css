@@ -182,8 +182,8 @@ input[type="text"][name="_honey"] {
 
 .menu-bg,
 #menu {
-  top: 0;
-  left: 0;
+  top: 2rem;
+  left: 10rem;
   position: absolute;
 }
 
