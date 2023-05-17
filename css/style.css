@@ -161,13 +161,14 @@ input[type="text"][name="_honey"] {
   display: none;
 }
 
-.nav ul {
+/* .nav ul {
   padding: 0 22px;
-}
+} */
 
 .nav li {
   list-style: none;
   padding: 10px 0;
+  text-align: center;
 }
 
 .nav li a {
@@ -214,13 +215,13 @@ input[type="text"][name="_honey"] {
 }
 
 .change #bar3 {
-  transform: translateY(-6px) rotateZ(45deg);
+  transform: translateY(-3px) rotateZ(45deg);
 }
 
 .change-bg {
   width: 520px;
   height: 460px;
-  transform: translate(-60%, -30%);
+  transform: translate(-50%, -20%);
 }
 
 .link {
