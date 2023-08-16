@@ -17,7 +17,8 @@ html {
 }
 
 main {
-  background-color: var(--bg-color);
+  background-image: url(img\background-aiDesign.png);
+  /* background-color: var(--bg-color); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -112,6 +113,7 @@ input[type="text"][name="_honey"] {
 }
 
 /* Background */
+/* Img */
 .noise::before {
   position: fixed;
   top: 0;
@@ -119,10 +121,18 @@ input[type="text"][name="_honey"] {
   width: 100vw;
   height: 100vh;
   content: "";
-  opacity: 0.05;
+  opacity: 0.7;
   pointer-events: none;
-  background: url(../img/background-noise.jpg);
+  background: url(../img/background-aiDesign.png);
   overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  filter: grayscale(100%)  contrast(70%);
+  /* filter: hue-rotate(90deg); */
+  /* filter: invert(75%); */
+  /* filter: opacity(25%); */
+  /* filter: sepia(60%); */
 }
 
 /* ? Hamburguer menu */
@@ -278,6 +288,7 @@ input[type="text"][name="_honey"] {
   text-align: center;
 }
 
+/* Vid */
 .text {
   overflow: hidden;
   order: 0;
@@ -295,6 +306,11 @@ input[type="text"][name="_honey"] {
   letter-spacing: -0.2rem;
   text-transform: uppercase;
   user-select: none;
+  /* filter: brightness(0.7); */
+  /* filter: blur(3px); */
+  /* filter: grayscale(100%); */
+  /* filter: contrast(200%); */
+  /*   filter: grayscale(100%) hue-rotate(90deg); */
 }
 
 .iso-container {
@@ -341,7 +357,7 @@ a {
 
 /* Icons Section */
 .icons-collection {
-  /*     border: 1px solid yellow; */
+  /*   border: 1px solid yellow; */
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -354,12 +370,15 @@ a {
   justify-content: center;
   width: 17%;
   height: 100%;
-  filter: grayscale();
-  /*     border: 1px solid yellow; */
+  filter: grayscale(100%) contrast(100%);
+  /* border: 1px solid yellow; */
+  border-radius: 10px;
+  opacity: 1;
 }
 
 .icons:hover {
   filter: none;
+  /* filter: brightness(0.4); */
 }
 
 .icons:active {
@@ -387,7 +406,7 @@ a {
   border: none;
   padding: 12px 18px;
   cursor: pointer;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.05rem;
 }
 
 .button::before {
@@ -667,7 +686,7 @@ button[type="submit"]:hover {
   .icons:nth-child(4) img {
     width: 100%;
   }
-  
+
   .button-container {
     width: 100%;
     justify-content: center;
