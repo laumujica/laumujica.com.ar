@@ -181,6 +181,12 @@ input[type="text"][name="_honey"] {
   text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  .text {
+      text-align: center;
+  }
+}
+
 .nav li a {
   color: white;
   font-size: 20px;
@@ -297,7 +303,7 @@ input[type="text"][name="_honey"] {
   background-position: center;
   background-size: cover;
   background-clip: border-box;
-  font-size: 10rem;
+  font-size: 8rem;
   font-weight: 700;
   font-family: "Mohave", sans-serif;
   -webkit-text-fill-color: transparent;
@@ -383,6 +389,11 @@ a {
 
 .icons:active {
   scale: 1.1;
+}
+
+/* Hire me */
+.contra-hire-me-button {
+  margin: 35px 0;
 }
 
 /* Button Contact Me */
