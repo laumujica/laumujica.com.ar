@@ -17,3 +17,9 @@ The aim for this year is to develop my own branding gradually as I delve into va
 ---
 [![Badge Hire me on Contra](/img/hiremeoncontra-light.png)](https://lauramujica.contra.com/)
 
+---
+**BACKLOG**
+1. Fix pointer hidden in mobile and tablet devices
+2. Rearrange text position in in mobile and tablet devices
+2. Add hamburguer menú
+3. 
