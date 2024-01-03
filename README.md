@@ -4,11 +4,16 @@ Within this new version of my professional website, I am exploring a more consis
 
 The aim for this year is to develop my own branding gradually as I delve into various disciplines within the tech world that interest me and contribute to shaping who I am.
 
-First Version - 2022
+**First version (2022)**
 ![First version (2022)](/vid/oldVersion-sm.gif)
 
-Old Version - 2023
+**Old version (2023)**
 ![Old version (2023)](/img/oldVersion23.png)
 
-Current Version - 2024
+**Current version (2024)**
 ![Current version (2024)](/img/currentVersion24.png)
+
+
+---
+**Hire me on Contra**
+![Badge](/img/hiremeoncontra-light.png)(https://lauramujica.contra.com/)
