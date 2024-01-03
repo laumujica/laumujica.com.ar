@@ -16,3 +16,9 @@ The aim for this year is to develop my own branding gradually as I delve into va
 
 ---
 [![Badge Hire me on Contra](/img/hiremeoncontra-light.png)](https://lauramujica.contra.com/){:target="_blank"}
+
+<a href="https://lauramujica.contra.com/" target="_blank">
+  <img src="/img/hiremeoncontra-light.png" alt="Badge Hire me on Contra">
+</a>
+
+
