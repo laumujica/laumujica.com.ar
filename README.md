@@ -18,8 +18,15 @@ The aim for this year is to develop my own branding gradually as I delve into va
 [![Badge Hire me on Contra](/img/hiremeoncontra-light.png)](https://lauramujica.contra.com/)
 
 ---
+**LOG 01/03/2024**
+- Uploaded new version 2024
+- Replaced old form provider because it's out of function
+- Couldn't link success.html to the form in the free version
+- The form is working. New provider: getform.io
+
+
 **BACKLOG**
 1. Fix pointer hidden in mobile and tablet devices
 2. Rearrange text position in in mobile and tablet devices
-2. Add hamburguer menú
-3. 
+2. Search a new free form provider to specify a custom redirect URL
+3. Add hamburguer menú
