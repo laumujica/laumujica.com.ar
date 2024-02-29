@@ -28,5 +28,17 @@ The aim for this year is to develop my own branding gradually as I delve into va
 **BACKLOG**
 1. Fix pointer hidden in mobile and tablet devices
 2. Rearrange text position in in mobile and tablet devices
-2. Search a new free form provider to specify a custom redirect URL
-3. Add hamburguer menú
+3. Search a new free form provider to specify a custom redirect URL
+4. Add hamburguer menú
+
+---
+**LOG 02/28/2024**
+- Fixed pointer hidden in mobile and tablet devices
+- Rearrange main text position in mobile and tablet devices
+
+
+**BACKLOG**
+1. Search a new free form provider to specify a custom redirect URL
+2. Add hamburguer menú
+3. Add a proyect template (hidden)
+4. Design new version ideas - media query
