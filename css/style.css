@@ -751,7 +751,7 @@ button[type="submit"]:hover {
 /** 3- 1025**/
 @media (min-width: 1025px) and (max-width: 1366px) {
   .name {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   .name-msg {
@@ -817,6 +817,7 @@ button[type="submit"]:hover {
   .modal-content {
     width: 40%;
     margin: 5% auto;
+    border-radius: 2%;
   }
 
   .link-backHome {
