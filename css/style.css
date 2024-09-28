@@ -17,8 +17,8 @@ html {
 }
 
 main {
-  background-image: url(/img/laumujica_bkg.jpg);
-  /* background-color: var(--bg-color); */
+  background-image: url(img/laumujica_bkg.jpg);
+  background-color: var(--light-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -123,7 +123,7 @@ input[type="text"][name="_honey"] {
   content: "";
   opacity: 0.7;
   pointer-events: none;
-  background: url(../img/background-aiDesign.png);
+ /*  background: url(img/laumujica_bkg3.jpg); */
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;

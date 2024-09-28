@@ -13,10 +13,10 @@ The aim for this year is to develop my own branding gradually as I delve into va
 **Current version (2024)**
 ![Current version (2024)](/img/currentVersion24.png)
 
-
+<!-- 
 ---
 [![Badge Hire me on Contra](/img/hiremeoncontra-light.png)](https://lauramujica.contra.com/)
-
+ -->
 ---
 **LOG 01/03/2024**
 - Uploaded new version 2024
@@ -42,3 +42,8 @@ The aim for this year is to develop my own branding gradually as I delve into va
 2. Add hamburguer menú
 3. Add a proyect template (hidden)
 4. Design new version ideas - media query
+
+---
+**UPDATE**
+Since the last revision I haven't had time to change this website according to a new perspective of what I'm offering.
+Right now, september-october 2024, I'm turning into a Brand Strategy. That's the kind of road that I'd like to walk.
