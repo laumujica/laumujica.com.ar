@@ -769,11 +769,11 @@ button[type="submit"]:hover {
   }
 
   .text-container {
-    max-width: 40rem;
+    max-width: 50rem;
   }
 
   .text {
-    font-size: 5rem;
+    font-size: 4.2rem;
   }
 
   .iso-container {
@@ -823,5 +823,9 @@ button[type="submit"]:hover {
   .link-backHome {
     margin: 2rem 0;
     font-size: 1.5rem;
+  }
+
+  .text {
+    font-size: 5rem;
   }
 }
