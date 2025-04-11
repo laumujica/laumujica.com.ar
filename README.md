@@ -1,4 +1,4 @@
-![Banner](/img/portada-github.png)
+![Banner](/img/portada-github.jpg)
 
 Within this new version of my professional website, I am exploring a more consistent visual identity. As the saying goes, 'the cobbler's children have no shoes,' expressing the notion that we put forth our utmost effort and achieve better results in others' work, while often drawing a blank when it comes to our own.
 
